@@ -1,1 +1,1 @@
-# KCS
+# kidsCoolShop
