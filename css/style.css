@@ -1,31 +1,38 @@
 * {
     box-sizing: border-box;
+    
 }
 
 html,
 body {
     height: 100%;
     margin: 0;
-    padding: 0
+    padding: 0;
+    font-family: Century Gothic;
+}
+
+h1,
+h2, h3 {
+    font-weight: 100;
 }
 
 /*IKONER - NY STYLING*/
 
-.icons-flex-container {
-    display: flex;
-    display: -webkit-flex;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    justify-content: space-around;
-   /* min-height: 400px;*/
+#icons {
+    margin: auto !important;
 }
+
+.description{
+    padding: 1%
+}
+
 
 .icons-flex-container p {
     color: #5d4645;
 }
 
 .icons-flex-item img {
+    
     max-width: 80%;
     text-align: center;
     opacity: 1;
@@ -40,13 +47,12 @@ body {
 }
 
 .icons-flex-item {
+    
     text-align: center;
     margin: auto;
 }
 
-.icons-flex-item p {
-    font-size: 22px;
-}
+
 
 .icons-flex-item a {
     text-decoration: none;
@@ -58,7 +64,6 @@ body {
     display: flex;
     justify-content: center;
     color: #5e4545;
-    font-size: 30px;
     font-weight: 100;
 }
 
@@ -73,14 +78,12 @@ body {
 }
 
 .pop-up {
-
     width: 100%;
-
     background: #fff;
     position: relative;
     z-index: 1;
-    border-radius: 5px;
-    box-shadow: 0 0 20px #000;
+    border-radius: 1opx;
+    box-shadow: 0 0 20px #0000004a;
 }
 
 .pop-up-container {
@@ -95,7 +98,7 @@ body {
 span {
     border-radius: 3em;
     margin-left: 95%;
-    background: #212121;
+    background: #cc3131;
     color: #fff;
     font-size: 1.25em;
     padding: .4em .7em;
@@ -104,13 +107,11 @@ span {
 
 .pop-up-text {
     box-sizing: border-box;
-    padding: 20px;
+    padding: 2%;
 }
 
 .pop-up-text h1 {
-    font-size: 2em;
-    font-weight: bold;
-    margin-bottom: 20px;
+    font-weight: 100;
     color: #212121;
     text-align: center;
 }
@@ -206,13 +207,33 @@ span {
     max-width: 80%;
 }
 
-.reviewtext{
-    width: 9em;
+.reviewtext {
+
     margin: 5%;
-    text-align:left
+    text-align: left;
+        width: 200px;
 }
 
 
+
+
+#prices{
+        margin: auto;
+        padding: 2%;
+}
+
+#products{
+    margin: auto;
+    padding: 2%;
+}
+
+#reviews{
+    margin: auto;
+    padding: 2%;
+ 
+    flex-grow: 1;
+    margin: 0%;
+}
 
 /*mobil*/
 
@@ -220,8 +241,8 @@ span {
     nav {
         width: 100%;
     }
-    
-        /*****Projekter section*****/
+
+    /*****Projekter section*****/
     .icons-flex-item {
         float: none;
         margin-right: 0;
@@ -237,17 +258,21 @@ span {
         align-content: flex-start;
         justify-content: space-between;
         height: auto;
+        
     }
 
     .icons-flex-container {
         flex-grow: 1;
         margin: 20%;
+        
     }
 
     .icons-flex-item img {
         max-height: 100%;
         max-width: 80%;
+        
     }
+
 }
 
 /*tablet*/
@@ -278,12 +303,13 @@ span {
         -webkit-flex-flow: row wrap;
         flex-flow: row wrap;
         text-align: center;
-        margin-left: 4%;
+       
+        
     }
-    .flexcontainer > * {
+    /* .flexcontainer > * {
         padding: 10px;
         flex: 1 33, 33%;
-    }
+    }*/
     .anmeldelser {
         margin-left: 16%;
     }
@@ -305,11 +331,13 @@ span {
         align-content: flex-start;
         justify-content: space-between;
         height: auto;
+        
     }
 
     .icons-flex-container {
         flex-grow: 1;
         margin: 0%;
+        
     }
 
     .icons-flex-item img {

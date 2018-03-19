@@ -13,13 +13,14 @@
 <body>
     <header>
         <!-- LOGO I HEADER _______________________________________-->
-        <img id="logo" src="images/kidscoolshoplogo.jpg" alt="logo" />
+        <a href="index.html"><img id="logo" src="images/kidscoolshoplogo.jpg" alt="logo" /></a>
 
     </header>
     <!-- BOKS MED BILLEDE ___________________________________ -->
     <div id="boks360">
 
     </div>
+
     <!-- PRODUKTBESKRIVELSE _________________________________ -->
     <div class="description">
         <h2 class="produkt">Produktbeskrivelse</h2>
@@ -29,8 +30,9 @@
     <div class="flexcontainer">
         <div id="speci">
             <div class="pop-up" id="test">
+                <span>x</span>
                 <div class="pop-up-text">
-                    <h1>Specifikationer</h1>
+                    <h2>Specifikationer</h2>
                     <p>Porttitor erat. Mauris tempor pharetra interdum. Nullam ut egestas arcu. Ut elementum feugiat dui nec maximus. Nulla non leo dictum, sollicitudin tellus vel, varius odio. Aenean a mi fringilla, consequat diam sed, lobortis dolor. Nam sit amet ex libero. Aliquam erat volutpat.</p>
                     <table class="tg">
                         <tr>
@@ -65,6 +67,8 @@
         <!--SPECIFIKATIONER SLUT -->
         <div id="prices">
             <div class="pop-up" id="test">
+                <span>x</span>
+                <h3>Her kan du sammenlig priser ...............</h3>
                 <!--<div class="pop-up-text">
                     <h1>Sammenlig priser</h1>
                     <p>Porttitor erat. Mauris tempor pharetra interdum. </p>
@@ -91,6 +95,8 @@
         <!-- PRISER SLUT -->
         <div id="products">
             <div class="pop-up" id="test">
+                     <span>x</span>
+                <h3>Her kan du finde lignende produkter ...............</h3>
                 <div class="icons-flex-container">
                     <div class="icons-flex-item">
                         <img src="images/bil1.jpg" alt="Cars 3 - Terry Kargas" />
@@ -110,30 +116,34 @@
         <!-- PRODUKTER SLUT -->
         <div id="reviews" id="test">
             <div class="pop-up">
+               <span>x</span>
+               
                 <div class="icons-flex-container">
                     <div class="icons-flex-item">
                         <img src="images/5stars.jpg" alt="" />
                         <p class="reviewtext">Jane M.</p>
-                        <p class="reviewtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel tincidunt sapien. Sed pharetra egestas dolor id gravida. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <p class="reviewtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel tincidunt sapien.</p>
                         <br /></div>
                     <div class="icons-flex-item">
                         <img src="images/4stars.jpg" alt="">
                         <p class="reviewtext">Pouls S.</p>
-                        <p class="reviewtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel tincidunt sapien. Sed pharetra egestas dolor id gravida. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <p class="reviewtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel tincidunt sapien.</p>
                         <br /></div>
                     <div class="icons-flex-item">
                         <img src="images/3stars.jpg" alt="" />
                         <p class="reviewtext">Thomas N.</p>
-                        <p class="reviewtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel tincidunt sapien. Sed pharetra egestas dolor id gravida. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <p class="reviewtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel tincidunt sapien.</p>
                         <br /></div>
+
                 </div>
+
             </div>
         </div>
         <!-- ANMELDELSER SLUT -->
         <div id="help">
             <div class="pop-up" id="test">
                 <div class="pop-up-text">
-                    <h1>Den næste ledige medarbejder vil betjene dig hurtigst muligt.</h1>
+                    <h2>Den næste ledige medarbejder vil betjene dig hurtigst muligt.</h2>
                 </div>
             </div>
         </div>
@@ -169,6 +179,7 @@
                     <br /></div>
             </div>
         </section>
+    </div>
         <script>
             //specifikationer
             $(document).ready(function() {
@@ -178,12 +189,18 @@
                     $(".description").hide();
                     $("#speci").toggle();
                 });
+                $('.pop-up span').click(function() {
+                    $('.pop-up-container').hide(0);
+                    $('.pop-up').hide(0);
+                    $("#boks360").show();
+                    $('.description').show(0);
+                });
             });
             //priser
             $(document).ready(function() {
                 $("#prices").hide();
                 $("#pricesButton").click(function() {
-                       $("#boks360").hide();
+                    $("#boks360").hide();
                     $(".description").hide();
                     $("#prices").toggle();
                 });
@@ -192,7 +209,7 @@
             $(document).ready(function() {
                 $("#products").hide();
                 $("#productsButton").click(function() {
-                       $("#boks360").hide();
+                    $("#boks360").hide();
                     $(".description").hide();
                     $("#products").toggle();
                 });
@@ -201,7 +218,7 @@
             $(document).ready(function() {
                 $("#reviews").hide();
                 $("#reviewButton").click(function() {
-                       $("#boks360").hide();
+                    $("#boks360").hide();
                     $(".description").hide();
                     $("#reviews").toggle();
                 });
