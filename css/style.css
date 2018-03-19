@@ -206,6 +206,12 @@ span {
     max-width: 80%;
 }
 
+.reviewtext{
+    width: 9em;
+    margin: 5%;
+    text-align:left
+}
+
 
 
 /*mobil*/
@@ -249,13 +255,13 @@ span {
 @media (min-width:767px) and (max-width:1023px) {
     /*LOGO I HEADER____________________________________________________________*/
     #logo {
-        width: 20em;
+        width: 13em;
         display: block;
         margin-left: auto;
         margin-right: auto;
     }
     /*BOKS TIL BILLED____________________________________________________________*/
-    .boks360 {
+    #boks360 {
         border: 2px solid black;
         width: 45em;
         margin: 1em;
