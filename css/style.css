@@ -23,7 +23,8 @@ h2, h3 {
 }
 
 .description{
-    padding: 1%
+    padding: 1%;
+        text-align:center;
 }
 
 
@@ -68,6 +69,31 @@ h2, h3 {
 }
 
 
+
+/* TABS*/
+#tabs{
+    background: none;
+    border: 1px solid #a1a1a1;
+}
+#baggrund {
+    background: none;
+    border: 0.5px solid #a1a1a1;
+}
+.brodtekst{
+    color:black;
+}
+.overskrift{
+    color: black;
+    font-size: 15px;
+}
+.tabsmenu {
+    background-color: white;
+    height: 60px;
+}
+
+li a {
+    border: 1.5px solid #a1a1a1;
+}
 
 
 /*Pop up effect fra: https://codepen.io/DominicFrancois/pen/vlJbf*/
@@ -167,14 +193,21 @@ span {
 }
 
 .tg .tg-erlg {
+    
     font-weight: bold;
-    background-color: #efefef;
+color:black;
+    background-color:white;
+    border: 2px solid black;
+
     vertical-align: top
 }
 
 .tg .tg-yw4l {
-    vertical-align: top
+   vertical-align: top;
+        color: black;
+    border: 2px solid black;
 }
+
 
 /*PRISER*/
 
@@ -233,6 +266,11 @@ span {
  
     flex-grow: 1;
     margin: 0%;
+}
+
+#help{
+      margin: auto;
+    padding: 2%;
 }
 
 /*mobil*/
@@ -344,7 +382,59 @@ span {
         max-height: 100%;
         max-width: 80%;
     }
+   /*BOKS TIL BILLED____________________________________________________________*/
 
+/* Style the tab */
+.tab {
+    float: right;
+    margin-right: 7.6%;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    width: 10%;
+    height: 116px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    display: block;
+    background-color: inherit;
+    color: black;
+    padding: 12px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+    .grader{
+        height: 28px;
+    }
+    .stopmotion {
+               
+    }
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+            display: block;
+        margin-left: auto;
+        margin-right: auto;
+    padding: 0px 0px;
+ border: 1px solid white;
+    width: 84.7%;
+    height: 300px;
+}
 
     /*INDHOLD TIL SPECIFIKATIONER*/
 }
