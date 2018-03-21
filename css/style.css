@@ -395,6 +395,41 @@ color:black;
    /*BOKS TIL BILLED____________________________________________________________*/
 
 /* Style the tab */
+ 
+/* Tabs */
+#tabs2 {
+    width: 730px;
+}
+
+#tabs-nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid #ccc;
+  overflow: auto;
+}
+
+#tabs-nav li {
+    float: left;
+    font-size: 14px;
+    font-weight:bold;
+    margin-right: 6px;
+    padding:6px 10px;
+    border:1px solid #d5d5de;
+    border-bottom:none;
+    cursor:pointer;
+  }
+#tabs-nav li:hover,
+li.active {
+  background-color: #d5d5de;
+}
+
+.content {
+  padding: 10px;
+  border: 1px solid #d5d5de;
+  border-top: none;
+}
+
 .tab {
     float: right;
     margin-right: 7.6%;
@@ -444,7 +479,8 @@ color:black;
  border: 1px solid white;
     width: 84.7%;
     height: 300px;
-}
+} 
+
 
     /*INDHOLD TIL SPECIFIKATIONER*/
 }
