@@ -1,6 +1,5 @@
 * {
     box-sizing: border-box;
-
 }
 
 html,
@@ -9,10 +8,10 @@ body {
     margin: 0;
     padding: 0;
     font-family: Century Gothic;
-        font-size: 22px;
+    font-size: 22px;
 }
-s
-h1,
+
+s h1,
 h2,
 h3 {
     font-weight: 100;
@@ -136,8 +135,9 @@ li.active {
 
 }
 
-#top, #logo{
-        margin-top: 20px;
+#top,
+#logo {
+    margin-top: 20px;
 }
 
 span {
@@ -162,7 +162,7 @@ span {
 }
 
 .pop-up-text p {
-       font-size: 22px;
+    font-size: 22px;
     margin-bottom: 1em;
     text-align: left;
 }
@@ -173,18 +173,18 @@ span {
 }
 
 .pop-up-text a {
-    color: #FF3D3D;
+    color: #000000;
     margin-bottom: 10px;
     font-family: century gothic;
     text-decoration: none;
-        font-size: 20px;
+    font-size: 20px;
 }
 
 .pop-up-text img {
     max-height: 250px;
 
     text-align: center;
-    margin-bottom: 10px;
+    /* margin-bottom: 10px;*/
 }
 
 /*Specifikationer tabel*/
@@ -234,7 +234,6 @@ span {
 
 /*PRISER*/
 
-/*****Priser section*****/
 
 .icons-flex-item {
     float: left;
@@ -264,14 +263,9 @@ span {
 }
 
 .reviewtext {
-
-
     text-align: left;
     width: 222px;
 }
-
-
-
 
 #prices {
     margin: auto;
@@ -303,7 +297,6 @@ span {
         width: 100%;
     }
 
-    /*****Projekter section*****/
     .icons-flex-item {
         float: none;
         margin-right: 0;
@@ -339,25 +332,25 @@ span {
 /*tablet*/
 
 @media (min-width:767px) and (max-width:1023px) {
-    /*LOGO I HEADER____________________________________________________________*/
+    /*LOGO*/
     #logo {
         width: 13em;
         display: block;
         margin-left: auto;
         margin-right: auto;
     }
-    /*BOKS TIL BILLED____________________________________________________________*/
+    /*BOKS TIL BILLED OG VIDEO*/
     #boks360 {
         border: 2px solid black;
         width: 45em;
         margin: 1em;
         height: 340px;
     }
-    /*PRODUKTBESKRIVELSE_______________________________________________________*/
+    /*PRODUKTBESKRIVELSE*/
     .produkt {
         text-align: center;
     }
-    /*IKONER__________________________________________________________________*/
+    /*IKONER*/
     .flexcontainer {
         display: -webkit-flex;
         display: flex;
@@ -367,16 +360,9 @@ span {
 
 
     }
-    /* .flexcontainer > * {
-        padding: 10px;
-        flex: 1 33, 33%;
-    }*/
     .anmeldelser {
         margin-left: 16%;
-    }
-
-
-    /*****Priser*****/
+    } 
     .icons-flex-item {
         float: none;
         margin-right: 0;
@@ -405,7 +391,7 @@ span {
         max-height: 100%;
         max-width: 80%;
     }
-    /*BOKS TIL BILLED____________________________________________________________*/
+    /*BOKS TIL BILLED*/
     /* Style the tab */
     /* Tabs */
     #tabs2 {
@@ -490,6 +476,4 @@ span {
         height: 300px;
     }
 
-
-    /*INDHOLD TIL SPECIFIKATIONER*/
 }

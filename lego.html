@@ -3,34 +3,33 @@
 
 <head>
     <meta charset="utf-8">
-    <title>New Project</title>
+    <title>Kids Coolshop</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href="css/jquery-ui.min.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
 <body>
     <header>
-        <!-- LOGO I HEADER _______________________________________-->
+        <!-- LOGO -->
         <a href="index.html"><img id="logo" src="images/kidscoolshoplogo.jpg" alt="logo" /></a>
 
     </header>
-    <!-- BOKS MED BILLEDE ___________________________________ -->
-     <div id="top">
-    <div class="tab">
-        <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen"> <img class="grader" src="images/lego.png" width="100%" alt="360billede"></button>
-        <button class="tablinks" onclick="openCity(event, 'Paris')"> <img  src="images/360billede.PNG" width="100%" alt="360billede"></button>
-    </div>
+    <!-- BOKS MED BILLEDE OG VIDEO -->
+    <div id="top">
+        <div class="tab">
+            <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen"> <img class="grader" src="images/lego.png" width="100%" alt="360billede"></button>
+            <button class="tablinks" onclick="openCity(event, 'Paris')"> <img  src="images/360billede.PNG" width="100%" alt="360billede"></button>
+        </div>
 
-    <div id="London" class="tabcontent">
-        <iframe class="stopmotion" width="560" height="298" src="https://www.youtube.com/embed/9L3EXwrUgWc?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-    </div>
+        <div id="London" class="tabcontent">
+            <iframe class="stopmotion" width="560" height="298" src="https://www.youtube.com/embed/9L3EXwrUgWc?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
 
-    <div id="Paris" class="tabcontent">
-        <iframe class="stopmotion" width="560" height="298" src="https://embed.imajize.com/3080006" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-    </div>
+        <div id="Paris" class="tabcontent">
+            <iframe class="stopmotion" width="560" height="298" src="https://embed.imajize.com/3080006" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
     </div>
     <script>
         function openCity(evt, cityName) {
@@ -50,11 +49,11 @@
         // Get the element with id="defaultOpen" and click on it
         document.getElementById("defaultOpen").click();
     </script>
-    <!-- PRODUKTBESKRIVELSE _________________________________ -->
+    <!-- PRODUKTBESKRIVELSE -->
     <div class="description">
         <h2 class="produkt">LEGO® Elves</h2>
     </div>
-    <!-- IKONER _____________________________________________ -->
+    <!-- IKONER -->
     <div class="flexcontainer">
         <div id="speci">
             <div class="pop-up" id="test">
@@ -66,11 +65,11 @@
                             <li><a href="#tab2">Specifikationer</a></li>
                         </ul>
                         <!-- tabs-nav -->
-
                         <div id="tabs-content">
                             <div id="tab1" class="content">
                                 <h2>Produktbeskrivelse</h2>
-                                <p>Søg din indre magi for at hjælpe Aira, Lumia og vogtervinddragen i kampen mod skyggeflagermusen! Dette fantastiske LEGO® Elves legetøj til piger indeholder en fuldt justerbar vinddrage, der kan bygges, med gennemsigtige vinger og plads til 2 minidukkefigurer. Sættet indeholder også et flagermusluftskib med skydefunktion og drejelig propel samt en "flydende" ø med musikskole, som har indgangsdør, der kan åbnes, skjult kiste og drejeligt skilt. 2 minidukkefigurer samt flagermus og fugl medfølger.</p>
+                                <p>Søg din indre magi for at hjælpe Aira, Lumia og vogtervinddragen i kampen mod skyggeflagermusen! Dette fantastiske <b>LEGO® Elves</b> legetøj til piger indeholder en fuldt justerbar vinddrage, der kan bygges, med gennemsigtige vinger og plads til 2 minidukkefigurer.<br>
+                                    <br> Sættet indeholder også et flagermusluftskib med skydefunktion og drejelig propel samt en "flydende" ø med musikskole, som har indgangsdør, der kan åbnes, skjult kiste og drejeligt skilt.<br> 2 minidukkefigurer samt flagermus og fugl medfølger.</p>
                             </div>
                             <div id="tab2" class="content">
                                 <h2>Specifikationer</h2>
@@ -99,12 +98,15 @@
                                         <td class="tg-erlg">Køn</td>
                                         <td class="tg-yw4l">Piger</td>
                                     </tr>
+                                    <tr>
+                                        <td class="tg-erlg"><img src="images/CE.jpg" width="30px"></td>
+                                        <td class="tg-yw4l"><img src="images/check.jpg" width="30px"></td>
+                                    </tr>
                                 </table>
                             </div>
                         </div>
                         <!-- tabs-content -->
                     </div>
-
                 </div>
             </div>
         </div>
@@ -113,13 +115,6 @@
             <div class="pop-up" id="test">
                 <span>x</span>
                 <br>
-                <!--<div class="pop-up-text">
-                    <h1>Sammenlig priser</h1>
-                    <p>Porttitor erat. Mauris tempor pharetra interdum. </p>
-                    <img src="images/kids.png" alt="kidscoolshoplogo" /><p class="pricetext">399,-</p>
-                    <img src="images/br2.png" alt="brlogo" /><p class="pricetext">499,-</p>
-                    <img src="images/toysrus.png" alt="toysruslogo" /><p class="pricetext">450,-</p>
-                </div> -->
                 <div class="icons-flex-container">
                     <div class="icons-flex-item">
                         <img src="images/kids.png" alt="kidscoolshoplogo" />
@@ -243,7 +238,6 @@
 
         });
     </script>
-
     <script>
         //specifikaitoner
         $(document).ready(function() {
@@ -329,10 +323,5 @@
     <!-- jQuery scripts -->
     <script src="js/jquery.js"></script>
     <script src="js/jquery-ui.js"></script>
-
-
-
-
 </body>
-
 </html>
