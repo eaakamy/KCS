@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    
+
 }
 
 html,
@@ -10,30 +10,33 @@ body {
     padding: 0;
     font-family: Century Gothic;
 }
-
+s
 h1,
-h2, h3 {
+h2,
+h3 {
     font-weight: 100;
 }
 
-/*IKONER - NY STYLING*/
+
+/*IKONER*/
 
 #icons {
     margin: auto !important;
 }
 
-.description{
+.description {
     padding: 1%;
-        text-align:center;
+    text-align: center;
 }
 
 
 .icons-flex-container p {
     color: #5d4645;
+    font-size: 18px;
 }
 
 .icons-flex-item img {
-    
+
     max-width: 80%;
     text-align: center;
     opacity: 1;
@@ -48,7 +51,7 @@ h2, h3 {
 }
 
 .icons-flex-item {
-    
+
     text-align: center;
     margin: auto;
 }
@@ -71,37 +74,39 @@ h2, h3 {
 
 
 /* Tabs */
+
 #tabs2 {
     width: 730px;
 }
 
 #tabs-nav {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  border-bottom: 1px solid #ccc;
-  overflow: auto;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid #ccc;
+    overflow: auto;
 }
 
 #tabs-nav li {
     float: left;
     font-size: 14px;
-    font-weight:bold;
+    font-weight: bold;
     margin-right: 6px;
-    padding:6px 10px;
-    border:1px solid #d5d5de;
-    border-bottom:none;
-    cursor:pointer;
-  }
+    padding: 6px 10px;
+    border: 1px solid #d5d5de;
+    border-bottom: none;
+    cursor: pointer;
+}
+
 #tabs-nav li:hover,
 li.active {
-  background-color: #d5d5de;
+    background-color: #d5d5de;
 }
 
 .content {
-  padding: 10px;
-  border: 1px solid #d5d5de;
-  border-top: none;
+    padding: 10px;
+    border: 1px solid #d5d5de;
+    border-top: none;
 }
 
 /*Pop up effect fra: https://codepen.io/DominicFrancois/pen/vlJbf*/
@@ -129,6 +134,10 @@ li.active {
 
 }
 
+#top, #logo{
+        margin-top: 20px;
+}
+
 span {
     border-radius: 3em;
     margin-left: 95%;
@@ -153,6 +162,7 @@ span {
 .pop-up-text p {
     font-size: 1em;
     margin-bottom: 1em;
+    text-align: left;
 }
 
 .pricetext {
@@ -161,7 +171,7 @@ span {
 }
 
 .pop-up-text a {
-        color: #FF3D3D;
+    color: #FF3D3D;
     margin-bottom: 10px;
     font-family: century gothic;
     text-decoration: none;
@@ -203,18 +213,18 @@ span {
 }
 
 .tg .tg-erlg {
-    
+
     font-weight: bold;
-color:black;
-    background-color:white;
+    color: black;
+    background-color: white;
     border: 2px solid black;
 
     vertical-align: top
 }
 
 .tg .tg-yw4l {
-   vertical-align: top;
-        color: black;
+    vertical-align: top;
+    color: black;
     border: 2px solid black;
 }
 
@@ -252,7 +262,7 @@ color:black;
 
 .reviewtext {
 
-    
+
     text-align: left;
     width: 222px;
 }
@@ -260,26 +270,26 @@ color:black;
 
 
 
-#prices{
-        margin: auto;
-        padding: 2%;
-}
-
-#products{
+#prices {
     margin: auto;
     padding: 2%;
 }
 
-#reviews{
+#products {
     margin: auto;
     padding: 2%;
- 
+}
+
+#reviews {
+    margin: auto;
+    padding: 2%;
+
     flex-grow: 1;
     margin: 0%;
 }
 
-#help{
-      margin: auto;
+#help {
+    margin: auto;
     padding: 2%;
 }
 
@@ -306,19 +316,19 @@ color:black;
         align-content: flex-start;
         justify-content: space-between;
         height: auto;
-        
+
     }
 
     .icons-flex-container {
         flex-grow: 1;
         margin: 20%;
-        
+
     }
 
     .icons-flex-item img {
         max-height: 100%;
         max-width: 80%;
-        
+
     }
 
 }
@@ -351,8 +361,8 @@ color:black;
         -webkit-flex-flow: row wrap;
         flex-flow: row wrap;
         text-align: center;
-       
-        
+
+
     }
     /* .flexcontainer > * {
         padding: 10px;
@@ -379,107 +389,103 @@ color:black;
         align-content: flex-start;
         justify-content: space-between;
         height: auto;
-        
+
     }
 
     .icons-flex-container {
         flex-grow: 1;
         margin: 0%;
-        
+
     }
 
     .icons-flex-item img {
         max-height: 100%;
         max-width: 80%;
     }
-   /*BOKS TIL BILLED____________________________________________________________*/
+    /*BOKS TIL BILLED____________________________________________________________*/
+    /* Style the tab */
+    /* Tabs */
+    #tabs2 {
+        width: 730px;
+    }
 
-/* Style the tab */
- 
-/* Tabs */
-#tabs2 {
-    width: 730px;
-}
+    #tabs-nav {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        border-bottom: 1px solid #ccc;
+        overflow: auto;
+    }
 
-#tabs-nav {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  border-bottom: 1px solid #ccc;
-  overflow: auto;
-}
+    #tabs-nav li {
+        float: left;
+        font-size: 14px;
+        font-weight: bold;
+        margin-right: 6px;
+        padding: 6px 10px;
+        border: 1px solid #d5d5de;
+        border-bottom: none;
+        cursor: pointer;
+    }
+    #tabs-nav li:hover,
+    li.active {
+        background-color: #d5d5de;
+    }
 
-#tabs-nav li {
-    float: left;
-    font-size: 14px;
-    font-weight:bold;
-    margin-right: 6px;
-    padding:6px 10px;
-    border:1px solid #d5d5de;
-    border-bottom:none;
-    cursor:pointer;
-  }
-#tabs-nav li:hover,
-li.active {
-  background-color: #d5d5de;
-}
+    .content {
+        padding: 10px;
+        border: 1px solid #d5d5de;
+        border-top: none;
+    }
 
-.content {
-  padding: 10px;
-  border: 1px solid #d5d5de;
-  border-top: none;
-}
+    .tab {
+        float: right;
+        margin-right: 7.6%;
+        border: 1px solid #ccc;
+        background-color: #f1f1f1;
+        width: 10%;
+        height: 116px;
+    }
 
-.tab {
-    float: right;
-    margin-right: 7.6%;
-    border: 1px solid #ccc;
-    background-color: #f1f1f1;
-    width: 10%;
-    height: 116px;
-}
+    /* Style the buttons inside the tab */
+    .tab button {
+        display: block;
+        background-color: inherit;
+        color: black;
+        padding: 12px 16px;
+        width: 100%;
+        border: none;
+        outline: none;
+        text-align: left;
+        cursor: pointer;
+        transition: 0.3s;
+        font-size: 17px;
+    }
 
-/* Style the buttons inside the tab */
-.tab button {
-    display: block;
-    background-color: inherit;
-    color: black;
-    padding: 12px 16px;
-    width: 100%;
-    border: none;
-    outline: none;
-    text-align: left;
-    cursor: pointer;
-    transition: 0.3s;
-    font-size: 17px;
-}
-
-    .grader{
+    .grader {
         height: 28px;
     }
-    .stopmotion {
-               
+    .stopmotion {}
+    /* Change background color of buttons on hover */
+    .tab button:hover {
+        background-color: #ddd;
     }
-/* Change background color of buttons on hover */
-.tab button:hover {
-    background-color: #ddd;
-}
 
-/* Create an active/current "tab button" class */
-.tab button.active {
-    background-color: #ccc;
-}
+    /* Create an active/current "tab button" class */
+    .tab button.active {
+        background-color: #ccc;
+    }
 
-/* Style the tab content */
-.tabcontent {
-            display: block;
+    /* Style the tab content */
+    .tabcontent {
+        display: block;
         margin-left: auto;
         margin-right: auto;
-    padding: 0px 0px;
- border: 1px solid white;
-    width: 84.7%;
-    height: 300px;
-} 
+        padding: 0px 0px;
+        border: 1px solid white;
+        width: 84.7%;
+        height: 300px;
+    }
 
 
     /*INDHOLD TIL SPECIFIKATIONER*/

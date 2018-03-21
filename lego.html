@@ -13,42 +13,42 @@
 
 <body>
     <header>
-         <!-- LOGO I HEADER _______________________________________-->
+        <!-- LOGO I HEADER _______________________________________-->
         <a href="index.html"><img id="logo" src="images/kidscoolshoplogo.jpg" alt="logo" /></a>
 
     </header>
     <!-- BOKS MED BILLEDE ___________________________________ -->
-   <div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen"> <img class="grader" src="images/lego.png" width="100%" alt="360billede"></button>
-  <button class="tablinks" onclick="openCity(event, 'Paris')"> <img  src="images/360billede.PNG" width="100%" alt="360billede"></button>
-</div>
+    <div class="tab">
+        <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen"> <img class="grader" src="images/lego.png" width="100%" alt="360billede"></button>
+        <button class="tablinks" onclick="openCity(event, 'Paris')"> <img  src="images/360billede.PNG" width="100%" alt="360billede"></button>
+    </div>
 
-<div id="London" class="tabcontent">
-<iframe class="stopmotion" width="560" height="298" src="https://www.youtube.com/embed/9L3EXwrUgWc?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-</div>
+    <div id="London" class="tabcontent">
+        <iframe class="stopmotion" width="560" height="298" src="https://www.youtube.com/embed/9L3EXwrUgWc?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
 
-<div id="Paris" class="tabcontent">
-<iframe class="stopmotion" width="560" height="298" src="https://embed.imajize.com/3080006" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-</div>
-    
-<script>
-function openCity(evt, cityName) {
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-    }
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-    document.getElementById(cityName).style.display = "block";
-    evt.currentTarget.className += " active";
-}
+    <div id="Paris" class="tabcontent">
+        <iframe class="stopmotion" width="560" height="298" src="https://embed.imajize.com/3080006" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
 
-// Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpen").click();
-</script>
+    <script>
+        function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+    </script>
     <!-- PRODUKTBESKRIVELSE _________________________________ -->
     <div class="description">
         <h2 class="produkt">Produktbeskrivelse</h2>
@@ -61,52 +61,58 @@ document.getElementById("defaultOpen").click();
                 <span>x</span>
                 <div class="pop-up-text">
                     <div id="tabs">
-  <ul id="baggrund">
-   <li><a class="tabsmenu" href="#tabs-1"><h3 class="overskrift">Beskrivelse</h3></a></li>
-    <li><a class="tabsmenu" href="#tabs-2"><h3 class="overskrift">Specifikationer</h3></a></li>
-  </ul>
-  <div id="tabs-1">
-    <p class="brodtekst">Søg din indre magi for at hjælpe Aira, Lumia og vogtervinddragen i kampen mod skyggeflagermusen! Dette fantastiske LEGO® Elves legetøj til piger indeholder en fuldt justerbar vinddrage, der kan bygges, med gennemsigtige vinger og plads til 2 minidukkefigurer. <br>
-Sættet indeholder også et flagermusluftskib med skydefunktion og drejelig propel samt en "flydende" ø med musikskole, som har indgangsdør, der kan åbnes, skjult kiste og drejeligt skilt. 2 minidukkefigurer samt flagermus og fugl medfølger.</p>
-  </div>
-  <div id="tabs-2">
-      <table class="tg">
-                        <tr>
-                            <th class="tg-erlg">Mærke</th>
-                            <th class="tg-yw4l">LEGO</th>
-                        </tr>
-                        <tr>
-                            <td class="tg-erlg">Produkt ID</td>
-                            <td class="tg-yw4l">AB62NH</td>
-                        </tr>
-                        <tr>
-                            <td class="tg-erlg">SKU</td>
-                            <td class="tg-yw4l">1087854</td>
-                        </tr>
-                        <tr>
-                            <td class="tg-erlg">Titel</td>
-                            <td class="tg-yw4l">LEGO Elves - Aira og vinddragens sang </td>
-                        </tr>
-                        <tr>
-                            <td class="tg-erlg">Alder</td>
-                            <td class="tg-yw4l">10+, 8-10 år</td>
-                        </tr>
-                        <tr>
-                            <td class="tg-erlg">Køn</td>
-                            <td class="tg-yw4l">Piger</td>
-                        </tr>
-                    </table>
+                        <ul id="tabs-nav">
+                            <li><a href="#tab1">Produkt beskrivelse</a></li>
+                            <li><a href="#tab2">Specifikationer</a></li>
+                        </ul>
+                        <!-- tabs-nav -->
 
-  </div>
-</div>
+                        <div id="tabs-content">
+                            <div id="tab1" class="content">
+                                <h2>Produkt beskrivelse</h2>
+                                <p>Søg din indre magi for at hjælpe Aira, Lumia og vogtervinddragen i kampen mod skyggeflagermusen! Dette fantastiske LEGO® Elves legetøj til piger indeholder en fuldt justerbar vinddrage, der kan bygges, med gennemsigtige vinger og plads til 2 minidukkefigurer. Sættet indeholder også et flagermusluftskib med skydefunktion og drejelig propel samt en "flydende" ø med musikskole, som har indgangsdør, der kan åbnes, skjult kiste og drejeligt skilt. 2 minidukkefigurer samt flagermus og fugl medfølger.</p>
+                            </div>
+                            <div id="tab2" class="content">
+                                <h2>Specifikationer</h2>
+                                <table class="tg" style="width: 700px;">
+                                    <tr>
+                                        <th class="tg-erlg">Mærke</th>
+                                        <th class="tg-yw4l">LEGO</th>
+                                    </tr>
+                                    <tr>
+                                        <td class="tg-erlg">Produkt ID</td>
+                                        <td class="tg-yw4l">AC6EB7</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="tg-erlg">SKU</td>
+                                        <td class="tg-yw4l">1087854</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="tg-erlg">Titel</td>
+                                        <td class="tg-yw4l">LEGO Elves - Aira og vinddragens sang </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="tg-erlg">Alder</td>
+                                        <td class="tg-yw4l">10+</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="tg-erlg">Køn</td>
+                                        <td class="tg-yw4l">Piger</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <!-- tabs-content -->
+                    </div>
 
-                </div> 
+                </div>
             </div>
-        </div> <!-- Specifikationer slut -->
-       <div id="prices">
+        </div>
+        <!-- Specifikationer slut -->
+        <div id="prices">
             <div class="pop-up" id="test">
                 <span>x</span>
-             <br>
+                <br>
                 <!--<div class="pop-up-text">
                     <h1>Sammenlig priser</h1>
                     <p>Porttitor erat. Mauris tempor pharetra interdum. </p>
@@ -117,8 +123,9 @@ Sættet indeholder også et flagermusluftskib med skydefunktion og drejelig prop
                 <div class="icons-flex-container">
                     <div class="icons-flex-item">
                         <img src="images/kids.png" alt="kidscoolshoplogo" />
-                        <p>349,-<p>
-                        <br /></div>
+                        <p>349,-
+                            <p>
+                                <br /></div>
                     <div class="icons-flex-item">
                         <img src="images/br2.png" alt="brlogo">
                         <p>499,-</p>
@@ -134,7 +141,7 @@ Sættet indeholder også et flagermusluftskib med skydefunktion og drejelig prop
         <div id="products">
             <div class="pop-up" id="test">
                 <span>x</span>
-       <br><br>
+                <br><br>
                 <div class="icons-flex-container">
                     <div class="icons-flex-item">
                         <img src="images/lego1.jpeg" alt="Cars 3 - Terry Kargas" />
@@ -189,7 +196,7 @@ Sættet indeholder også et flagermusluftskib med skydefunktion og drejelig prop
         <!-- MEDARBEJDER SLUT -->
         <div class="pop-up-container">
         </div>
-  <section id="icons" class="item">
+        <section id="icons" class="item">
             <div class="icons-flex-container">
                 <div class="icons-flex-item">
                     <p id="speciButton"> <img src="images/specifikationer.png" alt="" /></p>
@@ -218,68 +225,112 @@ Sættet indeholder også et flagermusluftskib med skydefunktion og drejelig prop
             </div>
         </section>
     </div>
+    <script>
+        // show first content by default
+        $('#tabs-nav li:first-child').addClass('active');
+        $('.content').hide();
+        $('.content:first').show();
 
-      <script>
-        //specifikationer
+        // click function
+        $('#tabs-nav li').click(function() {
+            $('#tabs-nav li').removeClass('active');
+            $(this).addClass('active');
+            $('.content').hide();
+
+            var activeTab = $(this).find('a').attr('href');
+            $(activeTab).fadeIn();
+            return false;
+
+        });
+    </script>
+
+    <script>
+        //specifikaitoner
         $(document).ready(function() {
             $("#speci").hide();
             $("#speciButton").click(function() {
-                $("#boks360").hide();
+                $("#speci").fadeIn(300);
+                $("#top").hide();
                 $(".description").hide();
-                $("#speci").toggle();
+                positionPopup();
             });
-            $('.pop-up span').click(function() {
-                $('.pop-up-container').hide(0);
-                $('.pop-up').hide(0);
-                $("#boks360").show();
-                $('.description').show(0);
+
+            $("#speci > span, #speci").click(function() {
+                $("#speci").fadeOut(300);
+                $("#top").show();
+                $(".description").show();
             });
         });
         //priser
         $(document).ready(function() {
             $("#prices").hide();
             $("#pricesButton").click(function() {
-                $("#boks360").hide();
+                $("#prices").fadeIn(300);
+                $("#top").hide();
                 $(".description").hide();
-                $("#prices").toggle();
+                positionPopup();
+            });
+
+            $("#prices > span, #prices").click(function() {
+                $("#prices").fadeOut(300);
+                $("#top").show();
+                $(".description").show();
             });
         });
         //produkter
         $(document).ready(function() {
             $("#products").hide();
             $("#productsButton").click(function() {
-                $("#boks360").hide();
+                $("#products").fadeIn(300);
+                $("#top").hide();
                 $(".description").hide();
-                $("#products").toggle();
+                positionPopup();
+            });
+
+            $("#products > span, #products").click(function() {
+                $("#products").fadeOut(300);
+                $("#top").show();
+                $(".description").show();
             });
         });
         //anmeldelser
         $(document).ready(function() {
             $("#reviews").hide();
             $("#reviewButton").click(function() {
-                $("#boks360").hide();
+                $("#reviews").fadeIn(300);
+                $("#top").hide();
                 $(".description").hide();
-                $("#reviews").toggle();
+                positionPopup();
+            });
+
+            $("#reviews > span, #reviews").click(function() {
+                $("#reviews").fadeOut(300);
+                $("#top").show();
+                $(".description").show();
             });
         });
-        //meadrbejder
+        //meaderbejder
         $(document).ready(function() {
             $("#help").hide();
             $("#helpButton").click(function() {
+                $("#help").fadeIn(300);
+                $("#top").hide();
                 $(".description").hide();
-                $("#help").toggle();
+                positionPopup();
+            });
+
+            $("#help > span, #help").click(function() {
+                $("#help").fadeOut(300);
+                $("#top").show();
+                $(".description").show();
             });
         });
     </script>
     <!-- jQuery scripts -->
-<script src="js/jquery.js"></script>
-<script src="js/jquery-ui.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-ui.js"></script>
 
-<script>
-      $( function() {
-    $( "#tabs" ).tabs();
-  } );
-</script>
+
 
 
 </body>

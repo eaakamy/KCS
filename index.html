@@ -15,7 +15,6 @@
     <header>
         <!-- LOGO I HEADER _______________________________________-->
         <a href="index.html"><img id="logo" src="images/kidscoolshoplogo.jpg" alt="logo" /></a>
-
     </header>
 
 
@@ -51,6 +50,7 @@
 
         // Get the element with id="defaultOpen" and click on it
         document.getElementById("defaultOpen").click();
+
     </script>
     <!-- PRODUKTBESKRIVELSE _________________________________ -->
     <div class="description">
@@ -62,48 +62,52 @@
         <div id="speci">
             <div class="pop-up" id="test">
                 <span>x</span>
-                <div class="pop-up-text"><div id="tabs">
-  <ul id="tabs-nav">
-    <li><a href="#tab1">Produkt beskrivelse</a></li>
-    <li><a href="#tab2">Specifikationer</a></li>
-  </ul> <!-- tabs-nav -->
-  
-  <div id="tabs-content">
-    <div id="tab1" class="content">
-      <h2>Produkt beskrivelse</h2>
-      <p>Nikko Vaporizr 2 er opfølgeren til den klassiske Vaporizr, som kan køre på vand, land og sne! Bilen leveres komplet med genopladeligt 6V batteri og med hurtiglader, som kan lade bilen på kun en time.</p>
-    </div>
-    <div id="tab2" class="content">
-      <h2>Specifikationer</h2>
- <table class="tg" style="width: 700px;">
-                                <tr>
-                                    <th class="tg-erlg">Mærke</th>
-                                    <th class="tg-yw4l">Nikko</th>
-                                </tr>
-                                <tr>
-                                    <td class="tg-erlg">Produkt ID</td>
-                                    <td class="tg-yw4l">AC6EB7</td>
-                                </tr>
-                                <tr>
-                                    <td class="tg-erlg">SKU</td>
-                                    <td class="tg-yw4l">1087854</td>
-                                </tr>
-                                <tr>
-                                    <td class="tg-erlg">Titel</td>
-                                    <td class="tg-yw4l">Nikko Vaporizr 2 – 2,4ghz – blå </td>
-                                </tr>
-                                <tr>
-                                    <td class="tg-erlg">Alder</td>
-                                    <td class="tg-yw4l">10+, 8-10 år</td>
-                                </tr>
-                                <tr>
-                                    <td class="tg-erlg">Køn</td>
-                                    <td class="tg-yw4l">Piger</td>
-                                </tr>
-                            </table>
-    </div>
-  </div> <!-- tabs-content -->
-</div> <!-- Tabs -->
+                <div class="pop-up-text">
+                    <div id="tabs">
+                        <ul id="tabs-nav">
+                            <li><a href="#tab1">Produkt beskrivelse</a></li>
+                            <li><a href="#tab2">Specifikationer</a></li>
+                        </ul>
+                        <!-- tabs-nav -->
+
+                        <div id="tabs-content">
+                            <div id="tab1" class="content">
+                                <h2>Produkt beskrivelse</h2>
+                                <p>Nikko Vaporizr 2 er opfølgeren til den klassiske Vaporizr, som kan køre på vand, land og sne! Bilen leveres komplet med genopladeligt 6V batteri og med hurtiglader, som kan lade bilen på kun en time.</p>
+                            </div>
+                            <div id="tab2" class="content">
+                                <h2>Specifikationer</h2>
+                                <table class="tg" style="width: 700px;">
+                                    <tr>
+                                        <th class="tg-erlg">Mærke</th>
+                                        <th class="tg-yw4l">Nikko</th>
+                                    </tr>
+                                    <tr>
+                                        <td class="tg-erlg">Produkt ID</td>
+                                        <td class="tg-yw4l">AC6EB7</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="tg-erlg">SKU</td>
+                                        <td class="tg-yw4l">1087854</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="tg-erlg">Titel</td>
+                                        <td class="tg-yw4l">Nikko Vaporizr 2 – 2,4ghz – blå </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="tg-erlg">Alder</td>
+                                        <td class="tg-yw4l">10+, 8-10 år</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="tg-erlg">Køn</td>
+                                        <td class="tg-yw4l">Drenge</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <!-- tabs-content -->
+                    </div>
+                    <!-- Tabs -->
                     <!-- <div id="tabs">
                         <ul id="baggrund">
                             <li>
@@ -246,15 +250,15 @@
             <div class="icons-flex-container">
                 <div class="icons-flex-item">
                     <p id="speciButton"> <img src="images/specifikationer.png" alt="" /></p>
-                    <p>Specifikationer</p>
+                    <p><b>Specifikationer</b></p>
                     <br /></div>
                 <div class="icons-flex-item">
                     <p id="pricesButton"> <img src="images/priser.png" alt=""></p>
-                    <p>Sammenlig priser</p>
+                    <p><b>Sammenlig priser</b></p>
                     <br /></div>
                 <div class="icons-flex-item">
                     <p id="productsButton"> <img src="images/ligendeprodukter.png" alt="" /></p>
-                    <p>Lignende produkter</p>
+                    <p><b>Lignende produkter</b></p>
                     <br /></div>
             </div>
         </section>
@@ -262,35 +266,33 @@
             <div class="icons-flex-container">
                 <div class="icons-flex-item">
                     <p id="reviewButton"><img src="images/andmeldelser.png" alt="" /></p>
-                    <p>Anmeldelser</p>
+                    <p><b>Anmeldelser</b></p>
                     <br /></div>
                 <div class="icons-flex-item">
                     <p id="helpButton"><img src="images/medarbejderhjalp.png" alt="" /></p>
-                    <p>Kald medarbejder</p>
+                    <p><b>Kald medarbejder</b></p>
                     <br /></div>
             </div>
         </section>
     </div>
     <a href="lego.html"><img src="images/bob.png"></a>
-     <script>
+    <script>
         // show first content by default
-$('#tabs-nav li:first-child').addClass('active');
-$('.content').hide();
-$('.content:first').show();
+        $('#tabs-nav li:first-child').addClass('active');
+        $('.content').hide();
+        $('.content:first').show();
 
-// click function
-$('#tabs-nav li').click(function(){
-  $('#tabs-nav li').removeClass('active');
-  $(this).addClass('active');
-  $('.content').hide();
-  
-  var activeTab = $(this).find('a').attr('href');
-  $(activeTab).fadeIn();
-  return false;
-  
-});
+        // click function
+        $('#tabs-nav li').click(function() {
+            $('#tabs-nav li').removeClass('active');
+            $(this).addClass('active');
+            $('.content').hide();
 
+            var activeTab = $(this).find('a').attr('href');
+            $(activeTab).fadeIn();
+            return false;
 
+        });
 
     </script>
 
@@ -375,12 +377,13 @@ $('#tabs-nav li').click(function(){
                 $(".description").show();
             });
         });
+
     </script>
     <!-- jQuery scripts -->
     <script src="js/jquery.js"></script>
     <script src="js/jquery-ui.js"></script>
 
-  
+
 
 </body>
 
