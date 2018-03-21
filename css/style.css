@@ -70,31 +70,39 @@ h2, h3 {
 
 
 
-/* TABS*/
-#tabs{
-    background: none;
-    border: 1px solid #a1a1a1;
-}
-#baggrund {
-    background: none;
-    border: 0.5px solid #a1a1a1;
-}
-.brodtekst{
-    color:black;
-}
-.overskrift{
-    color: black;
-    font-size: 15px;
-}
-.tabsmenu {
-    background-color: white;
-    height: 60px;
+/* Tabs */
+#tabs2 {
+    width: 730px;
 }
 
-li a {
-    border: 1.5px solid #a1a1a1;
+#tabs-nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid #ccc;
+  overflow: auto;
 }
 
+#tabs-nav li {
+    float: left;
+    font-size: 14px;
+    font-weight:bold;
+    margin-right: 6px;
+    padding:6px 10px;
+    border:1px solid #d5d5de;
+    border-bottom:none;
+    cursor:pointer;
+  }
+#tabs-nav li:hover,
+li.active {
+  background-color: #d5d5de;
+}
+
+.content {
+  padding: 10px;
+  border: 1px solid #d5d5de;
+  border-top: none;
+}
 
 /*Pop up effect fra: https://codepen.io/DominicFrancois/pen/vlJbf*/
 
@@ -153,8 +161,10 @@ span {
 }
 
 .pop-up-text a {
-    color: #FF3D3D;
+        color: #FF3D3D;
     margin-bottom: 10px;
+    font-family: century gothic;
+    text-decoration: none;
 }
 
 .pop-up-text img {
@@ -242,9 +252,9 @@ color:black;
 
 .reviewtext {
 
-    margin: 5%;
+    
     text-align: left;
-        width: 200px;
+    width: 222px;
 }
 
 
